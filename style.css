@@ -87,6 +87,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 621px) {
+  #root #formDiv {
+    min-width: 60%;
+  }
+}
+
 #root #formDiv #signUpLabel {
   font-size: 24px;
   letter-spacing: 0.2em;
@@ -111,8 +117,8 @@ body {
 
 @media only screen and (max-width: 620px) {
   #root #formDiv form {
-    width: 100%;
     padding: 0 30px;
+    width: 100%;
   }
 }
 
