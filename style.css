@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+  -moz-appearance: none !important;
+       appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  min-width: 100%;
+  position: relative;
+  background-color: #e6e6e6;
+}
+
+#root #formDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #138073;
+}
+
+@media only screen and (max-width: 620px) {
+  #root #formDiv {
+    width: 100%;
+  }
+}
+
+#root #formDiv #signUpLabel {
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+
+#root #formDiv form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 620px) {
+  #root #formDiv form {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+
+#root #formDiv form #nameInput,
+#root #formDiv form #emailInput {
+  margin: 0.8em;
+  padding: 1em;
+  width: 100%;
+  height: 64px;
+  border: 1px solid black;
+}
+
+#root #formDiv form #nameInput::-webkit-input-placeholder,
+#root #formDiv form #emailInput::-webkit-input-placeholder {
+  color: #138073;
+}
+
+#root #formDiv form #nameInput:-ms-input-placeholder,
+#root #formDiv form #emailInput:-ms-input-placeholder {
+  color: #138073;
+}
+
+#root #formDiv form #nameInput::-ms-input-placeholder,
+#root #formDiv form #emailInput::-ms-input-placeholder {
+  color: #138073;
+}
+
+#root #formDiv form #nameInput::placeholder,
+#root #formDiv form #emailInput::placeholder {
+  color: #138073;
+}
+
+#root #formDiv form #conditions {
+  min-height: 20px;
+  min-width: 20px;
+  border: 1px solid black;
+}
+
+#root #formDiv form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.8em 0;
+  width: 100%;
+}
+
+#root #formDiv form div label {
+  margin-left: 0.5em;
+}
+
+#root #formDiv form button {
+  min-width: 50%;
+  min-height: 5em;
+  margin: 2em;
+  background-color: #39b69f;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: white;
+}
+
+#root #formDiv form input {
+  background-color: white;
+  font-size: 16px;
+}
+/*# sourceMappingURL=style.css.map */

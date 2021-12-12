@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  min-width: 100%;
+
+  position: relative;
+  background-color: #e6e6e6;
+
+  #formDiv {
+    @media only screen and (max-width: 620px) {
+      width: 100%;
+    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #138073;
+
+    #signUpLabel {
+      font-size: 24px;
+      letter-spacing: 0.2em;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (max-width: 620px) {
+        width: 100%;
+        padding: 0 30px;
+      }
+
+      #nameInput,
+      #emailInput {
+        margin: 0.8em;
+        padding: 1em;
+        width: 100%;
+        height: 64px;
+
+        border: 1px solid black;
+
+        &::placeholder {
+          color: #138073;
+        }
+      }
+
+      #conditions {
+        min-height: 20px;
+        min-width: 20px;
+
+        border: 1px solid black;
+      }
+
+      div {
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        margin: 0.8em 0;
+        width: 100%;
+
+        label {
+          margin-left: 0.5em;
+        }
+      }
+
+      button {
+        min-width: 50%;
+        min-height: 5em;
+        margin: 2em;
+
+        background-color: #39b69f;
+
+        font-size: 12px;
+        letter-spacing: 0.2em;
+        color: white;
+      }
+
+      input {
+        background-color: white;
+
+        font-size: 16px;
+      }
+    }
+  }
+}
