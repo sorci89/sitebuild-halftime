@@ -51,7 +51,7 @@ body {
 
 #root {
   min-height: 100vh;
-  min-width: 100%;
+  min-width: 100vw;
   position: relative;
   background-color: #e6e6e6;
 }
@@ -88,7 +88,7 @@ body {
 
 @media only screen and (min-width: 621px) {
   #root #formDiv {
-    min-width: 60%;
+    min-width: 100%;
   }
 }
 
@@ -96,6 +96,7 @@ body {
   font-size: 24px;
   letter-spacing: 0.2em;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 #root #formDiv form {
